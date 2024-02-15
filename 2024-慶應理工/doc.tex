@@ -1,0 +1,74 @@
+\documentclass[14pt,a4paper,dvipdfmx,fleqn]{jarticle}
+
+%%%%% 画像や色に関するパッケージ %%%%%
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[table,dvipdfmx]{xcolor}
+
+%%%%% 数式関連のパッケージ %%%%%
+\usepackage{amsmath, amssymb, amsfonts}
+
+%%%%% 使用する色の定義 %%%%%
+\definecolor{spred}{RGB}{224,50,83}
+\definecolor{spblue}{RGB}{0,123,199}
+\definecolor{spgreen}{RGB}{0,168,133}
+\newcommand{\red}[1]{\textcolor{spred}{\bf #1}}
+\newcommand{\blue}[1]{\textcolor{spblue}{\bf #1}}
+\newcommand{\green}[1]{\textcolor{spgreen}{\bf #1}}
+\newcommand{\white}[1]{\textcolor{white}{#1}}
+
+%%%%% 表に関するパッケージ %%%%%
+\usepackage{array}
+
+%%%%% 枠に関するパッケージ %%%%%
+\usepackage{framed, tcolorbox}
+\usepackage[export]{adjustbox}
+
+%%%%% 下線を引くパッケージ %%%%%
+\usepackage{ulem}
+
+%%%%% 図形を描くパッケージ %%%%%
+\usepackage{tikz}
+
+%%%%% ページの上下左右マージン %%%%%
+\usepackage[top=30mm,bottom=30mm,left=15mm,right=15mm]{geometry}
+
+%%%%% 絶対座標を指定したいときに使用 %%%%%
+\usepackage[absolute,overlay]{textpos}
+
+%%%%% ハイパーリンク %%%%%
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+\hypersetup{
+    setpagesize=false,
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=red,
+}
+
+
+%%%%% ceo.styはいいよ！ %%%%%
+\usepackage{ceo}
+
+%%%%% 画像の回り込みにemathMwが使えるよ %%%%%
+%\usepackage{epic,eepic,emath,emathMw,emathB,emathBk}
+
+% =,→ 間の余白
+\thickmuskip=1.0\thickmuskip
+% +,- 間の余白
+\medmuskip=0.8\medmuskip
+% … などの装飾記号の余白
+\thinmuskip=0.8\thinmuskip
+% 行列を詰める
+\arraycolsep=0.3\arraycolsep
+% 数式の上下のスペースの変更
+\AtBeginDocument{
+    \abovedisplayskip     =0.5\abovedisplayskip
+    \abovedisplayshortskip=0.5\abovedisplayshortskip
+    \belowdisplayskip     =0.5\belowdisplayskip
+    \belowdisplayshortskip=0.5\belowdisplayshortskip}
+
+\begin{document}
+    あああ
+\end{document}
