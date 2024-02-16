@@ -1,4 +1,4 @@
-\documentclass[14pt,a4paper,dvipdfmx,fleqn]{jarticle}
+\documentclass[14pt,b5paper,dvipdfmx,fleqn]{jarticle}
 
 %%%%% 画像や色に関するパッケージ %%%%%
 \usepackage[dvipdfmx]{graphicx}
@@ -52,7 +52,7 @@
 \usepackage{ceo}
 
 %%%%% 画像の回り込みにemathMwが使えるよ %%%%%
-%\usepackage{epic,eepic,emath,emathMw,emathB,emathBk}
+\usepackage{epic,eepic,emath,emathMw}
 
 % =,→ 間の余白
 \thickmuskip=1.0\thickmuskip
@@ -70,5 +70,26 @@
     \belowdisplayshortskip=0.5\belowdisplayshortskip}
 
 \begin{document}
-    あああ
+    \begin{framed}
+        \noindent
+        {\bf \large 第1問 \quad \kakkoichi} \par
+        $2024$の約数の中で$1$番大きいものは$2024$だが、$6$番目に大きいものは\Bd{3.3zw}{(ア)}である。
+        $2024$の$6$乗根に最も近い自然数は\Bd{3.3zw}{(イ)}である。\syutten{2024 慶應理工}
+    \end{framed}
+
+    \noindent
+    \setumei\quad $2024$の約数
+    \begin{align*}
+        &-2024,~-1012,~-506,~-253,~-184,~-92,~-88,~-46,~-44,~-23,~-22,~-11, \\
+        &-8,~-4,~-2,~-1,~1,~2,~4,~8,~11,~22,~23,~44,~46,~88,~92,~184,~253,~506, \\
+        &1012,~2024
+    \end{align*}
+    \Bd{3.3zw}{(ア)}~~：~~$92$
+
+    \noindent
+    $2024$の$6$乗根 \\[1mm]
+    $x^6=2024$を解いて
+    \begin{align*}
+        x=-\sqrt{2}\sqrt[6]{253},~\sqrt{2}\sqrt[6]{253},~-\bunsuu{\sqrt[6]{253}}{\sqrt{2}}-\bunsuu{i\sqrt{3}\sqrt[6]{253}}{\sqrt{2}}
+    \end{align*}
 \end{document}
